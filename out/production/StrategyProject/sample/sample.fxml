@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sampleController">
+   <children>
+      <Pane prefHeight="487.0" prefWidth="630.0">
+         <children>
+            <TextField fx:id="filePath" layoutX="133.0" layoutY="69.0" prefHeight="25.0" prefWidth="296.0" />
+            <Button layoutX="32.0" layoutY="129.0" mnemonicParsing="false" onAction="#xmlParse" text="-&gt;xml" />
+            <Label layoutX="32.0" layoutY="103.0" prefHeight="17.0" prefWidth="67.0" text="Parse into:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="95.0" layoutY="129.0" mnemonicParsing="false" onAction="#jsonParse" text="-&gt;json" />
+            <Button layoutX="163.0" layoutY="129.0" mnemonicParsing="false" text="-&gt;csv" />
+            <Button layoutX="32.0" layoutY="69.0" mnemonicParsing="false" onAction="#selectAFile" text="Choose a File:" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
